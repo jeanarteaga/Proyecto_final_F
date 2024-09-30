@@ -61,8 +61,8 @@ if filtro_comparacion:
             prompt = f"Analiza y explica los resultados financieros para las empresas en las categorías {subcategorias_seleccionadas} en términos de {seleccion}."
 
             # Uso del nuevo endpoint ChatCompletion
-            response = openai.ChatCompletion.create(
-                model="gpt-3.5-turbo",
+            response = client.chat.completion.create(
+                model="gpt-4o-mini",
                 messages=[
                     {"role": "system", "content": "Eres un experto en análisis financiero."},
                     {"role": "user", "content": prompt}
