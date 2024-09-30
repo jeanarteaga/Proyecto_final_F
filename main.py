@@ -264,7 +264,8 @@ if columna_categoria:
             # Interpretación del gráfico apilado utilizando ChatGPT
      
 
-
+# Acceder a la API key desde secrets
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 client = openai.Client(api_key=openai_api_key)
 
 def obtener_respuesta(prompt):
