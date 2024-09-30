@@ -5,7 +5,7 @@ import seaborn as sns
 import openai  # Nuevo import para OpenAI
 
 # Configura tu clave de API de OpenAI
-openai.api_key = 'clave'  # Reemplaza con tu clave de API
+openai.api_key = 'openai_api_key'  # Reemplaza con tu clave de API
 
 # Carga el archivo CSV desde GitHub
 url = "https://raw.githubusercontent.com/jeanarteaga/Proyecto_final_F/refs/heads/main/Datos_proyecto_final_limpio.csv"
